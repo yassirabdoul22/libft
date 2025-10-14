@@ -6,9 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:04:42 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:04:43 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:17:02 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start,size_t len)
 {

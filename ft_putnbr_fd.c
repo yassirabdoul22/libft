@@ -6,12 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:23 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:24 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:15:41 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-
+#include "libft.h"
 void    ft_putchar(char c,int fd)
 {
     write(fd,&c,1);

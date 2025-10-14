@@ -6,9 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:03 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:04 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:35 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {

@@ -6,10 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:07 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:08 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:23 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void ft_striteri(char *s, void (*f)(unsigned int,char*))
 {

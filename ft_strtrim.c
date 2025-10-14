@@ -6,9 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:33:57 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:04:47 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:17:09 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int is_in_set(char c, const char *set)
 {

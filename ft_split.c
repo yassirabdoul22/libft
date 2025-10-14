@@ -6,11 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:16 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:17 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:03 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	is_separator(char c, char sep)
 {

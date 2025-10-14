@@ -6,12 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:06:01 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/13 17:41:57 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:27 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

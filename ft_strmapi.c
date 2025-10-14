@@ -6,9 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:04:58 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:04:59 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:45 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
  char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

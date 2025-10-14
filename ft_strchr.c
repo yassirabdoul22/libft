@@ -6,9 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:13 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:14 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:11 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strchr(const char *s, int c)
 {

@@ -6,12 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:04:52 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:04:53 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:16:54 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
