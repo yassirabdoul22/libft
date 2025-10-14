@@ -14,11 +14,11 @@
 
 int	ft_atoi(const char *s)
 {
-	int	i;
-	int	isneg;
-	int	rest;
-	if(!s)
-		return 0;
+	int i;
+	int isneg;
+	int rest;
+	if (!s)
+		return (0);
 	i = 0;
 	isneg = 1;
 	rest = 0;

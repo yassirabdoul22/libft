@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*joined;
-	char	*ptr; 
-	int		lens1;
-	int		lens2;
+	char *joined;
+	char *ptr;
+	int lens1;
+	int lens2;
 
 	if (!s1)
 		s1 = "";
@@ -29,9 +29,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	ptr = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	if (!ptr)
-		return NULL;
+		return (NULL);
 
-	joined = ptr; 
+	joined = ptr;
 
 	while (*s1)
 		*ptr++ = *s1++;
@@ -39,5 +39,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		*ptr++ = *s2++;
 
 	*ptr = '\0';
-	return joined; 
+	return (joined);
 }

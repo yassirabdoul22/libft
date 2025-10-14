@@ -6,17 +6,16 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:17:13 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 10:05:36 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 14:06:41 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include"libft.h"
 
 char	*ft_strrev(char *s)
 {
-	int		i;
-	int		j;
+	size_t		i;
+	size_t	j;
 	char	temp;
 
 	if (!s)
@@ -24,8 +23,8 @@ char	*ft_strrev(char *s)
 		return (NULL);
 	}
 	i = 0;
-	j = ft_strlen(s);
-	while (i < j)
+	j = (int)ft_strlen(s);
+	while (i <j)
 	{
 		j--;
 		temp = s[i];

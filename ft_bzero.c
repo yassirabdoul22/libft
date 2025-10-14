@@ -6,11 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:17:28 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/13 18:17:29 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:49:53 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

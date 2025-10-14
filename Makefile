@@ -1,5 +1,5 @@
-NAME = libft
-CC = gcc
+NAME = libft.a
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
@@ -7,7 +7,10 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	ar rcs $(NAME) $(OBJ)
+
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
@@ -17,4 +20,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+test: $(NAME) main.c
+	$(CC) $(CFLAGS) main.c -L. -lft -o test_libft
+
+.PHONY: all clean fclean re test

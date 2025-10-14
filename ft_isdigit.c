@@ -6,11 +6,11 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:04:52 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/13 16:04:53 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 14:23:23 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }
