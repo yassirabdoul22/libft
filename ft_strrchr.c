@@ -5,14 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 12:16:57 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 12:51:05 by yaabdoul         ###   ########.fr       */
+/*   Created: 2025/10/15 15:42:11 by yaabdoul          #+#    #+#             */
+/*   Updated: 2025/10/15 15:55:43 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// still that
-// rename functions
-// testing
-// ...
+char	*ft_strrchr(const char *s, int c)
+{
+	int		i;
+	char	*last;
+
+	last = NULL;
+	i = 0;
+	while (s[i])
+	{
+		if ((unsigned char)s[i] == (unsigned char)c)
+			last = (char *)(s + i);
+		i++;
+	}
+	if ((unsigned char)c == '\0')
+		return ((char *)(s + i));
+	return (last);
+}

@@ -3,56 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yaabdoul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 18:17:13 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 14:06:41 by yaabdoul         ###   ########.fr       */
+/*   Created: 2025/10/15 16:04:29 by yaabdoul          #+#    #+#             */
+/*   Updated: 2025/10/15 16:09:14 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev(char *s)
+int	numlen(int n)
 {
-	size_t	i;
-	size_t	j;
-	char	temp;
+	int		len;
+	long	num;
 
-	if (!s)
+	num = n;
+	len = 1;
+	if (num < 0)
 	{
-		return (NULL);
+		num = -num;
+		len++;
 	}
-	i = 0;
-	j = (int)ft_strlen(s);
-	while (i < j)
+	while (num)
 	{
-		j--;
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
-		i++;
+		len++;
+		num = num / 10;
 	}
-	return (s);
-}
-
-int	numlen(int num)
-{
-	int		acc;
-	long	n;
-
-	acc = 0;
-	n = num;
-	if (n < 0)
-	{
-		n = -n;
-		acc = 1;
-	}
-	while (n)
-	{
-		acc++;
-		n = n / 10;
-	}
-	return (acc);
+	return (len);
 }
 
 char	*ft_itoa(int n)
@@ -60,26 +37,23 @@ char	*ft_itoa(int n)
 	char	*res;
 	long	num;
 	int		len;
-	int		sign;
 
 	num = n;
-	sign = 0;
-	if (sign)
-	{
-		num = -num;
-		sign = 1;
-	}
-	len = numlen(num);
-	res = malloc(sizeof(char) * (len + sign + 1));
+	len = numlen(n);
+	res = malloc(sizeof(char) * (len + 1));
 	if (!res)
 		return (NULL);
-	res[len + sign] = '\0';
-	while (len--)
+	res[len] = '\0';
+	if (n == 0)
+		res[0] = '0';
+	if (num < 0)
+		num = -num;
+	while (num)
 	{
-		res[len + sign] = (num % 10) + '0';
+		res[--len] = (num % 10) + '0';
 		num /= 10;
 	}
-	if (sign)
+	if (n < 0)
 		res[0] = '-';
 	return (res);
 }

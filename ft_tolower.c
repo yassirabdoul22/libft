@@ -6,13 +6,13 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:16:56 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 21:06:10 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:24:49 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
-		return (c - 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:04:52 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 21:06:39 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:44:03 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!big || !little)
+		return (NULL);
 	if (*little == '\0')
 		return ((char *)big);
 	i = 0;

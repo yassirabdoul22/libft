@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:15:03 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 21:08:29 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:57:17 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	cara;
 	size_t			i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	res = (unsigned char *)s;
 	cara = (unsigned char)c;
