@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:05:23 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 12:15:41 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 20:57:58 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ void	ft_putchar(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
 void	ft_putnbr_fd(int n, int fd)
 {
-	long num;
+	long	num;
 
 	num = n;
 	if (num < 0)

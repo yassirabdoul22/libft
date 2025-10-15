@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 19:28:11 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 12:49:33 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 20:55:15 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ void	*ft_calloc(size_t count, size_t size)
 	char	*ptr;
 
 	if (count == 0 || size == 0)
-		count = size = 1;
+	{
+		count = 1;
+		size = 1;
+	}
 	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);

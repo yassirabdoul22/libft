@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:15:03 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 12:15:04 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/14 21:08:29 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (res[i] == cara)
-			return (void *)(res + i);
+			return ((void *)(res + i));
 		i++;
 	}
 	return (NULL);

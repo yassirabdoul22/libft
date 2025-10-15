@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strrev(char *s)
 {
-	size_t		i;
+	size_t	i;
 	size_t	j;
 	char	temp;
 
@@ -24,7 +24,7 @@ char	*ft_strrev(char *s)
 	}
 	i = 0;
 	j = (int)ft_strlen(s);
-	while (i <j)
+	while (i < j)
 	{
 		j--;
 		temp = s[i];

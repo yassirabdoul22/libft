@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabdoul <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 20:56:36 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/14 20:56:39 by yaabdoul         ###   ########.fr       */
+/*   Created: 2025/10/14 20:18:36 by yaabdoul          #+#    #+#             */
+/*   Updated: 2025/10/14 21:02:27 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (c >= 97 && c <= 122)
-		return (c - 32);
-	return (c);
+	if (!lst || new)
+		return (NULL);
+	new->next = *list;
+	*lst = new;
 }
