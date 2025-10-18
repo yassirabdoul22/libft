@@ -6,7 +6,7 @@
 /*   By: yaabdoul <yaabdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:17:35 by yaabdoul          #+#    #+#             */
-/*   Updated: 2025/10/15 15:46:02 by yaabdoul         ###   ########.fr       */
+/*   Updated: 2025/10/18 16:32:23 by yaabdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ int	ft_atoi(const char *s)
 	int	isneg;
 	int	rest;
 
-	if (!s)
-		return (0);
 	i = 0;
 	isneg = 1;
 	rest = 0;
