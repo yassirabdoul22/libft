@@ -58,7 +58,7 @@ char	*malloc_word(char *str, char sep)
 	return (word);
 }
 
-char	**ft_split(char *str, char sep)
+char	**ft_split(char *str, char c)
 {
 	char	**result;
 	int		i;
@@ -66,17 +66,17 @@ char	**ft_split(char *str, char sep)
 	i = 0;
 	if (!str)
 		return (NULL);
-	result = malloc(sizeof(char *) * (count_words(str, sep) + 1));
+	result = malloc(sizeof(char *) * (count_words(str, c) + 1));
 	if (!result)
 		return (NULL);
 	while (*str)
 	{
-		while (*str && is_separator(*str, sep))
+		while (*str && is_separator(*str, c))
 			str++;
-		if (*str && !is_separator(*str, sep))
+		if (*str && !is_separator(*str, c))
 		{
-			result[i++] = malloc_word(str, sep);
-			while (*str && !is_separator(*str, sep))
+			result[i++] = malloc_word(str, c);
+			while (*str && !is_separator(*str, c))
 				str++;
 		}
 	}
